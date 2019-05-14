@@ -1,10 +1,17 @@
 package cn.gxh.property.Lsn13;
 
+import android.annotation.SuppressLint;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.tencent.bugly.crashreport.CrashReport;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,6 +21,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 import cn.gxh.base.BaseFragment;
+import cn.gxh.base.SplashActivity;
 import cn.gxh.property.Lsn11.CompressUtil;
 import cn.gxh.property.Lsn13.flatc.FlatBufferBuilder;
 import cn.gxh.view.R;
@@ -66,7 +74,14 @@ public class FlatcFragment extends BaseFragment {
     @Override
     public void initData() {
 
+////        CrashReport.testNativeCrash();
+//        CrashReport.testANRCrash();
+//
+//        CrashReport.testJavaCrash();
     }
+
+
+
 
     /**
      * 序列化

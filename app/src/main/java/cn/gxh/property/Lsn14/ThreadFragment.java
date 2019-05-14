@@ -272,6 +272,7 @@ public class ThreadFragment extends BaseFragment {
         }
     }
 
+    //封装一个计算任务，实现Callable接口
     static class Task implements Callable<Integer> {
         //返回异步任务的执行结果
         @Override

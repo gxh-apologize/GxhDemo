@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btn_conn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接"/>
+
+    <Button
+        android:id="@+id/btn_ceshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打印测试页"/>
+
+    <Button
+        android:id="@+id/btn_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取打印模式"/>
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打印订单"/>
+
+    <Button
+        android:id="@+id/btn_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打印机状态"/>
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭打印机连接"/>
+
+    <Button
+        android:id="@+id/btn_query_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询打印机状态"/>
+
+</LinearLayout>
