@@ -2,6 +2,7 @@ package cn.gxh.base;
 
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
@@ -116,18 +117,15 @@ public class MainActivity extends BaseActivity {
 
 
     private void registerNetworkConnectChangeReceiver() {
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(WifiManager.NETWORK_STATE_CHANGED_ACTION);
-        filter.addAction(WifiManager.WIFI_STATE_CHANGED_ACTION);
-        filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
-        filter.addAction(WifiManager.SUPPLICANT_CONNECTION_CHANGE_ACTION);
-        filter.addAction(WifiManager.SUPPLICANT_STATE_CHANGED_ACTION);
-        NetworkConnectChangedReceiver mNetworkConnectChangedReceiver = new NetworkConnectChangedReceiver();
-        registerReceiver(mNetworkConnectChangedReceiver, filter);
+//        IntentFilter filter = new IntentFilter();
+//        filter.addAction(WifiManager.NETWORK_STATE_CHANGED_ACTION);
+//        filter.addAction(WifiManager.WIFI_STATE_CHANGED_ACTION);
+//        filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
+//        filter.addAction(WifiManager.SUPPLICANT_CONNECTION_CHANGE_ACTION);
+//        filter.addAction(WifiManager.SUPPLICANT_STATE_CHANGED_ACTION);
+//        NetworkConnectChangedReceiver mNetworkConnectChangedReceiver = new NetworkConnectChangedReceiver();
+//        registerReceiver(mNetworkConnectChangedReceiver, filter);
     }
-
-
-
 
 
 

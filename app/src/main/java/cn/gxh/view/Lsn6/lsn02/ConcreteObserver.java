@@ -6,7 +6,6 @@ package cn.gxh.view.Lsn6.lsn02;
  */
 public class ConcreteObserver implements AbstratObserver {
 
-
     private String name;
 
     public ConcreteObserver(String name) {

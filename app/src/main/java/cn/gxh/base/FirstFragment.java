@@ -21,6 +21,7 @@ import cn.gxh.property.FirstAdapter;
 import cn.gxh.property.Lsn11.CompressFragment;
 import cn.gxh.property.Lsn13.FlatcFragment;
 import cn.gxh.property.Lsn14.ThreadFragment;
+import cn.gxh.property.camera.CameraFragment;
 import cn.gxh.property.gif.GifFragment;
 import cn.gxh.property.ip.IpFragment;
 import cn.gxh.property.map.MapFragment;
@@ -105,6 +106,9 @@ public class FirstFragment extends BaseFragment {
             case 10:
                 supportFragment = MapFragment.newInstance();
                 break;
+            case 11:
+                supportFragment = CameraFragment.newInstance();
+                break;
         }
 
         ((MainFragment) getParentFragment()).startBrotherFragment(supportFragment);
@@ -140,6 +144,7 @@ public class FirstFragment extends BaseFragment {
         list.add("ip地址");
         list.add("并发编程艺术");
         list.add("百度地图定位相关");
+        list.add("Camera");
         firstAdapter.setNewData(list);
     }
 }

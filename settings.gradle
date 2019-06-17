@@ -1,1 +1,1 @@
-include ':app', ':bundle'
+include ':app', ':bundle', ':cn.gxh.common', ':common'

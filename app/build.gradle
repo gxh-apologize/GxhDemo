@@ -61,6 +61,7 @@ dependencies {
     implementation 'org.slf4j:slf4j-android:1.7.7'
     implementation files('libs/jbsdk.jar')
     implementation files('libs/BaiduLBS_Android.jar')
+    implementation project(':common')
 }
 
 android{

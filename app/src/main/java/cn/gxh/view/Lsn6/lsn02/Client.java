@@ -1,8 +1,5 @@
 package cn.gxh.view.Lsn6.lsn02;
 
-import cn.gxh.view.Lsn6.lsn01.Game;
-import cn.gxh.view.Lsn6.lsn01.LoLGame;
-
 /**
  * Created  by gxh on 2019/1/23 22:48
  */
