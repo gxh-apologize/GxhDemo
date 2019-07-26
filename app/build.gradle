@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
 
 android {
     compileSdkVersion 26
@@ -62,6 +63,10 @@ dependencies {
     implementation files('libs/jbsdk.jar')
     implementation files('libs/BaiduLBS_Android.jar')
     implementation project(':common')
+    implementation 'com.youth.banner:banner:1.4.9'
+
+    //GreenDao
+    implementation 'org.greenrobot:greendao:3.2.2'
 }
 
 android{

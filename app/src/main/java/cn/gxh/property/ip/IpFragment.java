@@ -4,9 +4,11 @@ import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Environment;
+import android.text.TextUtils;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.FileIOUtils;
+import com.blankj.utilcode.util.NetworkUtils;
 
 import java.io.File;
 import java.util.List;
@@ -48,8 +50,8 @@ public class IpFragment extends BaseFragment {
     public void initView(Bundle savedInstanceState) {
 
         TextView tvContent = findView(R.id.tv_fragment_ip_content);
-//        String ipAddress = NetworkUtils.getIPAddress(true);
-//        tvContent.setText(TextUtils.isEmpty(ipAddress) ? "没有获取到" : ipAddress);
+        String ipAddress = NetworkUtils.getIPAddress(true);
+        tvContent.setText(TextUtils.isEmpty(ipAddress) ? "没有获取到" : ipAddress);
     }
 
     @Override

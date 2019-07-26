@@ -1,13 +1,8 @@
 package cn.gxh.property.camera;
-
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Configuration;
-import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.ImageFormat;
 import android.graphics.Matrix;
-import android.graphics.Paint;
 import android.graphics.PixelFormat;
 import android.graphics.Point;
 import android.graphics.RectF;
@@ -20,7 +15,6 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
-
 import java.io.File;
 import java.io.FileOutputStream;
 
@@ -328,7 +322,7 @@ public class CameraFragment extends BaseFragment implements SurfaceHolder.Callba
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
         Logger.d("gxh", "surfaceDestroyed");
-        camera.release();
+//        camera.release();
     }
 
     //视频流的回调
